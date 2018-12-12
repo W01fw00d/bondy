@@ -1,8 +1,7 @@
 # Bondy
-Sorta of a Scientific Analisis Data Translator, like a software bond between two different lab machines
+Rearangerer of Spreadsheet of General Spectroscopic Data to make it compatible with ReactLab(TM) JPlus Consulting Data Analizer Software
 
 ## How to use (user level):
-
 1. Download Python 2 installer from https://www.python.org/downloads/release/python-2714/ (choose Windows x86-64 MSI installer)
 2. Install it with default options
 3. Download this project zip and place it in a convenient folder for your use
