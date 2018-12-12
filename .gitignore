@@ -1,4 +1,6 @@
 /example
 /example/*
-/input/*
-/output/*
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
