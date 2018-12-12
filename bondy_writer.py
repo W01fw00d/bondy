@@ -65,7 +65,7 @@ class BondyWriter:
 
 			results_csv_writer.writerow(wavelength_list)
 
-			#interpolate
+			#transpose
 			line_list = []
 			for x in range(len(filtered_point_list) - 1):
 				line_list = [filtered_point_list[x]]
@@ -78,7 +78,7 @@ class BondyWriter:
 	def print_formatted_result(self, wavelength_list, filtered_point_list, data_matrix):
 		print(self.format_list_into_commas_string(wavelength_list))
 
-		#interpolate
+		#transpose
 		for x in range(len(filtered_point_list) - 1):
 			print(filtered_point_list[x] + ';')
 

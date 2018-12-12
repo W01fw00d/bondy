@@ -1,5 +1,4 @@
-/example
-/example/*
+hidden_example/*
 input/*
 !input/.gitkeep
 output/*
