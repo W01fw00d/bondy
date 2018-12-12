@@ -43,7 +43,13 @@ class BondyWriter:
 
 			#get even index items, wich contains useful result data
 			data_line_list = data_line_list[::2]
-			data_matrix.append(data_line_list)
+			
+			#change english . notation by , spanish notation for floats
+			formatted_data_line_list = []
+			for data_item in data_line_list:
+				formatted_data_line_list.append(data_item.replace(".", ","))
+			
+			data_matrix.append(formatted_data_line_list)
 
 		#Get the name_of_file.csv, without the path
 		file_name = text_file.name.split("\\")[1]
@@ -54,7 +60,7 @@ class BondyWriter:
 		#self.print_formatted_result(wavelength_list, filtered_point_list, data_matrix)
 
 	def write_formatted_result_into_output_csv(self, file_name, wavelength_list, filtered_point_list, data_matrix):
-		with open('output/formatted_' + file_name, mode='w') as csv_file:
+		with open('output/formatted_' + file_name, mode='wb') as csv_file:
 			results_csv_writer = csv.writer(csv_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
 			results_csv_writer.writerow(wavelength_list)
