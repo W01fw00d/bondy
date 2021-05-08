@@ -1,5 +1,7 @@
 # Bondy
-General Spectroscopic Data Spreadsheet Rearranger; It converts a .csv to a compatible format with ReactLab(TM) JPlus Consulting Data Analyzer Software
+General Spectroscopic Data Spreadsheet Rearranger.
+
+It converts a .csv from a `VARIAN Cary 300 Bio UV-vis spectrophotometer` into a compatible format with `ReactLab(TM) JPlus Consulting` Data Analyzer Software
 
 ## How to use (user level):
 1. Download Python 2 installer from https://www.python.org/downloads/release/python-2714/ (choose Windows x86-64 MSI installer)
